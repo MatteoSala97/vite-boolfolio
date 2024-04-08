@@ -54,8 +54,8 @@ export default{
                 </li>
 
                 <li>
-                    <router-link class="nav-link" :to="{ name: 'about' }">
-                        About
+                    <router-link class="nav-link" :to="{ name: 'project-list' }">
+                        Project List
                     </router-link>
                 </li>
                 
