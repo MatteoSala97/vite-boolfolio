@@ -1,10 +1,13 @@
 <script>
 import axios from 'axios';
 import MainApp from './components/MainApp.vue';
+import AppHeader from './components/AppHeader.vue';
 
 export default{
     components: {
-      MainApp
+      MainApp,
+      AppHeader,
+
     },
 
     data(){{ 
@@ -26,10 +29,18 @@ export default{
 </script>
 
 <template>
- 
-  <h1>☻ Frontend ☻</h1>
+<header>
+  <AppHeader/>
+</header>
 
-  <MainApp/>
+<main>
+  <!-- <MainApp/> -->
+</main>
+
+<router-view>
+
+</router-view>
+
 </template>
 
 <style scoped>
